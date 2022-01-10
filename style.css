@@ -58,16 +58,6 @@ body {
   font-size: 1.125rem;
 }
 
-/*  removing anchor and li styles
-a,
-a:visited {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-} */
-
 /* * make images easier to work with */
 img,
 picture {
@@ -136,35 +126,13 @@ select {
   place-items: center;
 }
 
-.grid-columns-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid-columns-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid-columns-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .bh {
   border: 1px solid red;
 }
 
 .container {
-  width: 100%; /*91.875rem; */
+  max-width: 91.875rem;
   margin-inline: auto;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
-  border: 0;
 }
 
 .uppercase {
@@ -420,6 +388,7 @@ select {
 .section-content {
   text-align: center;
   min-height: 50vh;
+  padding-bottom: 2rem;
 }
 
 .section-content h1 {
